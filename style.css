@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+body{
+      background-image: url("https://image.shutterstock.com/image-illustration/abstract-doodling-art-600w-1346931284.jpg");
+      min-height: 100vh;
+}
+*{
+      font-family: 'Bangers', cursive;
+      margin: 0;
+      padding: 0;
+}
+h1{
+      font-size: 70px;
+      font-weight: 400;
+      height: 90px;
+      background-image: url("https://media.istockphoto.com/vectors/colorful-rainbow-texture-background-of-gradient-colors-followed-the-vector-id980777600?k=20&m=980777600&s=612x612&w=0&h=g2davSAWKvtwjqFb1F-vwpjjIBBSDA5YRak8Uk0BozU=");
+      display: block;
+      place-items: center;
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: 10s ease;
+      animation: gradientmove 6s ease-in infinite;  
+      
+}
+
+@keyframes gradientmove{
+      0%{
+            background-size: 200%;
+      }
+      25%{
+            background-size: 0%;
+      }
+      50%{
+            background-size: 200%;
+      }
+      75%{
+            background-size: 0%;
+      }
+      100%{
+            background-size: 200%;
+      }
+}
+#show_sketch{
+      position: absolute;
+      top: 20;
+      right: 20;
+      padding: 10px 20px;
+      font-size: 20px;
+      border: 5px solid black;
+      border-radius: 3px;
+      transition: 0.5s ease;
+      overflow: hidden;
+}
+#clearCanvas{
+      position: absolute;
+      width: 14%;
+      bottom: 30;
+      left: 43%;
+      padding: 10px 20px;
+      font-size: 20px;
+      border: 5px solid black;
+      border-radius: 3px;
+      transition: 0.5s ease;
+      overflow: hidden;
+}
+.effect{
+      width: 200px;
+      height: 70px;
+      background: black;
+      position: absolute;
+      left: -200;
+      top: -10;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      color: white;
+      transition: 1s ease;
+      padding-top: 20;
+}
+.effect{
+      width: 200px;
+      height: 70px;
+      background: black;
+      position: absolute;
+      left: -200;
+      top: -10;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      color: white;
+      transition: 1s ease;
+      padding-top: 20;
+}
+#show_sketch:hover > .effect{
+      left: -10;
+}
+#show_sketch:hover{
+      color: white;
+}
+#clearCanvas:hover > .effect{
+      left: -10;
+}
+#clearCanvas:hover{
+      color: white;
+}
+canvas{
+      border: 5px solid black;
+      border-radius: 20px;
+      margin-top: 70px;
+      animation: switchborder 10s ease infinite;
+}
+p{
+      color: white;
+      padding: 10px 20px;
+      background-color: black;
+      width: fit-content;
+      border-radius: 5px;
+      font-size: 20px;
+      animation: switchborder2 10s ease infinite;
+}
+@keyframes switchborder2{
+      0%{
+            background: red;
+      }
+      10%{
+            background: orange;
+      }
+      20%{
+            background: yellow;
+      }
+      30%{
+            background: green;
+      }
+      40%{
+            background: blue;
+      }
+      50%{
+            background: indigo;
+      }
+      60%{
+            background: violet;
+      }
+      70%{
+            background: firebrick;
+      }
+      80%{
+            background: pink;
+      }
+      90%{
+            background: grey;
+      }
+      100%{
+            background: goldenrod;
+      }
+}
+@keyframes switchborder{
+      0%{
+            border-color: red;
+      }
+      10%{
+            border-color: orange;
+      }
+      20%{
+            border-color: yellow;
+      }
+      30%{
+            border-color: green;
+      }
+      40%{
+            border-color: blue;
+      }
+      50%{
+            border-color: indigo;
+      }
+      60%{
+            border-color: violet;
+      }
+      70%{
+            border-color: firebrick;
+      }
+      80%{
+            border-color: pink;
+      }
+      90%{
+            border-color: grey;
+      }
+      100%{
+            border-color: goldenrod;
+      }
+}
